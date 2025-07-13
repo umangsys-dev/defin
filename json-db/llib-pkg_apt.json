@@ -1,0 +1,31 @@
+{
+  "sfml_graphics": "libsfml-graphics-dev",
+  "sfml_audio": "libsfml-audio-dev",
+  "sfml_window": "libsfml-window-dev",
+  "sfml_system": "libsfml-system-dev",
+  "sfml_network": "libsfml-network-dev",
+  "sfml_opengl": "libsfml-graphics-dev",
+  "sfml_main": "libsfml-dev",
+
+  "sdl2": "libsdl2-dev",
+  "sdl2_image": "libsdl2-image-dev",
+  "sdl2_mixer": "libsdl2-mixer-dev",
+  "sdl2_ttf": "libsdl2-ttf-dev",
+  "sdl2_net": "libsdl2-net-dev",
+  "sdl2_opengl": "libsdl2-dev",
+
+  "boost_asio": "libboost-asio-dev",
+  "boost_filesystem": "libboost-filesystem-dev",
+  "boost_uuid": "libboost-uuid-dev",
+  "boost_program_options": "libboost-program-options-dev",
+  "boost_thread": "libboost-thread-dev",
+  "boost_regex": "libboost-regex-dev",
+  "boost_chrono": "libboost-chrono-dev",
+  "boost_date_time": "libboost-date-time-dev",
+  "boost_serialization": "libboost-serialization-dev",
+  "boost_system": "libboost-system-dev",
+  "boost_test": "libboost-test-dev",
+  "boost_algorithm": "libboost-dev",
+  "boost_iostreams": "libboost-iostreams-dev",
+  "boost_graph": "libboost-graph-dev"
+}

@@ -1,0 +1,31 @@
+{
+  "sfml_graphics": "sfml",
+  "sfml_audio": "sfml",
+  "sfml_window": "sfml",
+  "sfml_system": "sfml",
+  "sfml_network": "sfml",
+  "sfml_opengl": "sfml",
+  "sfml_main": "sfml",
+
+  "sdl2": "sdl2",
+  "sdl2_image": "sdl2_image",
+  "sdl2_mixer": "sdl2_mixer",
+  "sdl2_ttf": "sdl2_ttf",
+  "sdl2_net": "sdl2_net",
+  "sdl2_opengl": "sdl2",
+
+  "boost_asio": "boost",
+  "boost_filesystem": "boost",
+  "boost_uuid": "boost",
+  "boost_program_options": "boost",
+  "boost_thread": "boost",
+  "boost_regex": "boost",
+  "boost_chrono": "boost",
+  "boost_date_time": "boost",
+  "boost_serialization": "boost",
+  "boost_system": "boost",
+  "boost_test": "boost",
+  "boost_algorithm": "boost",
+  "boost_iostreams": "boost",
+  "boost_graph": "boost"
+}

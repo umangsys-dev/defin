@@ -1,0 +1,21 @@
+{
+
+	"apt":{
+
+		"find":"dpkg -s {pkg}",
+		"install":"sudo apt install {pkg} -y"
+	},
+
+	"pacman":{
+
+		"find":"pacman -Q {pkg}",
+		"install":"sudo pacman -Sy {pkg}"
+	},
+
+	"dnf":{
+
+		"find":"rpm -q {pkg}",
+		"install":"sudo dnf install {pkg} -y"
+	}
+
+}

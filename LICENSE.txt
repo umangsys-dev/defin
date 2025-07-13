@@ -1,0 +1,44 @@
+Copyright (c) 2025 Umang Achalia
+
+Permission is hereby granted to any individual or organization to **use** this software — including in commercial or proprietary environments — under the following conditions:
+
+1. **Attribution is required.**  
+   Any use of this software — whether in source or binary form — must visibly acknowledge the original author:  
+   > "Powered by defin, created by Umang Achalia (2025)"
+
+2. **Redistribution and modification are strictly prohibited.**  
+   You may not copy, fork, rehost, mirror, sublicense, repackage, or otherwise redistribute this software, in whole or in part, whether modified or unmodified.
+
+3. **Permission to redistribute or modify will not be granted.**  
+   No exceptions will be made. Claims of special or written permission are invalid and shall be treated as violations of this license.
+
+4. **The original license must remain attached** to all copies of this software, where usage is permitted under these terms (e.g. internal use with attribution).
+
+---
+
+### Third-Party Components
+
+This project includes the following third-party library:
+
+- **TinyProcessLibrary**  
+  Licensed under the MIT License  
+  See `LICENSE-tinyprocess.txt`
+
+---
+
+### JSON Database Exception
+
+JSON mapping files located in the `json-db/` directory are **licensed separately** under the MIT License.  
+See `json-db/LICENSE-json.txt` for terms. These files may be freely copied, reused, and contributed to.
+
+---
+
+### Disclaimer of Warranty
+
+This software is provided **"as is"**, without warranty of any kind, express or implied.  
+In no event shall the author be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from or in connection with the software or the use or other dealings in the software.
+
+---
+
+For legal inquiries or attribution clarification, contact:  
+**umang-achalia-dev@proton.me**
