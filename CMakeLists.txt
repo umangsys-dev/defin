@@ -29,3 +29,5 @@ install(TARGETS ${PROJECT_NAME}
 install(FILES json-db/header-llib.json json-db/llib-pkg_apt.json json-db/llib-pkg_pacman.json json-db/llib-pkg_dnf.json json-db/pm-cmd.json
 	DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}
 )
+
+5YLd6Y/\~1o@

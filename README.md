@@ -33,3 +33,50 @@ cd defin
 cmake -B build
 cmake --build build
 sudo cmake --install build
+
+
+## 🚀 Usage
+
+### ⚙️ Commands
+
+#### 🔧 `sudo depin fix /path/to/project/`
+
+- Recursively scans all `.cpp`, `.hpp`, `.c`, and `.h` files in the given directory
+- Detects used `#include` headers
+- Maps them to logical libraries and installable packages
+- Installs missing packages automatically using your system's package manager
+
+> This is the main command for resolving and fixing missing dependencies.
+
+---
+
+#### 📋 `sudo depin enlist -m /path/to/project/`
+
+- Lists **missing** packages (headers used in the source but packages not installed)
+- Does not perform any installation
+- Ideal for dry runs or CI integration
+
+---
+
+#### 📋 `sudo depin enlist -p /path/to/project/`
+
+- Lists **present** packages (headers used and already available on your system)
+- Useful for auditing project dependencies
+
+---
+
+### 📁 Project Requirements
+
+The given directory should contain C++ source code:
+- Any combination of `.cpp`, `.hpp`, `.c`, or `.h` files
+- No need for a compiled binary
+
+depin directly parses your source code to extract `#include` directives.
+
+---
+
+### ⚠️ Notes
+
+- Use `sudo` since actual package installation requires root
+- Supported package managers: `apt`, `pacman`, and `dnf`
+- Future versions may include `--help`, auto-confirm options, and more flags
