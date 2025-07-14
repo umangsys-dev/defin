@@ -40,7 +40,7 @@ sudo cmake --install build
 
 ### ⚙️ Commands
 
-#### 🔧 `sudo depin fix /path/to/project/`
+#### 🔧 `sudo defin fix /path/to/project/`
 
 - Recursively scans all `.cpp`, `.hpp`, `.c`, and `.h` files in the given directory
 - Detects used `#include` headers
@@ -51,7 +51,7 @@ sudo cmake --install build
 
 ---
 
-#### 📋 `sudo depin enlist -m /path/to/project/`
+#### 📋 `sudo defin enlist -m /path/to/project/`
 
 - Lists **missing** packages (headers used in the source but packages not installed)
 - Does not perform any installation
@@ -59,7 +59,7 @@ sudo cmake --install build
 
 ---
 
-#### 📋 `sudo depin enlist -p /path/to/project/`
+#### 📋 `sudo defin enlist -p /path/to/project/`
 
 - Lists **present** packages (headers used and already available on your system)
 - Useful for auditing project dependencies
