@@ -1,31 +1,35 @@
 {
-  "sfml_graphics": "SFML-devel",
-  "sfml_audio": "SFML-devel",
-  "sfml_window": "SFML-devel",
-  "sfml_system": "SFML-devel",
-  "sfml_network": "SFML-devel",
-  "sfml_opengl": "SFML-devel",
-  "sfml_main": "SFML-devel",
+  "_cpp_std": "gcc",
 
-  "sdl2": "SDL2-devel",
-  "sdl2_image": "SDL2_image-devel",
-  "sdl2_mixer": "SDL2_mixer-devel",
-  "sdl2_ttf": "SDL2_ttf-devel",
-  "sdl2_net": "SDL2_net-devel",
-  "sdl2_opengl": "SDL2-devel",
+  "_sfml": "SFML-devel",
 
-  "boost_asio": "boost-devel",
-  "boost_filesystem": "boost-filesystem-devel",
-  "boost_uuid": "boost-uuid-devel",
-  "boost_program_options": "boost-program-options-devel",
-  "boost_thread": "boost-thread-devel",
-  "boost_regex": "boost-regex-devel",
-  "boost_chrono": "boost-chrono-devel",
-  "boost_date_time": "boost-date-time-devel",
-  "boost_serialization": "boost-serialization-devel",
-  "boost_system": "boost-system-devel",
-  "boost_test": "boost-test-devel",
-  "boost_algorithm": "boost-devel",
-  "boost_iostreams": "boost-iostreams-devel",
-  "boost_graph": "boost-graph-devel"
+  "_sdl2": "SDL2-devel",
+
+  "_boost": "boost-devel",
+
+  "_fmt": "fmt-devel",
+
+  "_nlohmann": "json-devel",
+
+  "_yaml": "yaml-cpp-devel",
+
+  "_cereal": "cereal",
+
+  "_imgui": "imgui-devel",
+
+  "_qt": "qt5-qtbase-devel",
+
+  "_opengl": "glew-devel glfw-devel",
+
+  "_curl": "libcurl-devel",
+
+  "_zip": "libzip-devel",
+
+  "_archive": "libarchive-devel",
+
+  "_eigen": "eigen3-devel",
+
+  "_opencv": "opencv-devel",
+
+  "_raylib": "raylib-devel"
 }

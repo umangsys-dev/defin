@@ -1,31 +1,117 @@
 {
-  "SFML/Graphics.hpp": "sfml_graphics",
-  "SFML/Audio.hpp": "sfml_audio",
-  "SFML/Window.hpp": "sfml_window",
-  "SFML/System.hpp": "sfml_system",
-  "SFML/Network.hpp": "sfml_network",
-  "SFML/OpenGL.hpp": "sfml_opengl",
-  "SFML/Main.hpp": "sfml_main",
 
-  "SDL.h": "sdl2",
-  "SDL_image.h": "sdl2_image",
-  "SDL_mixer.h": "sdl2_mixer",
-  "SDL_ttf.h": "sdl2_ttf",
-  "SDL_net.h": "sdl2_net",
-  "SDL_opengl.h": "sdl2_opengl",
+// --- Standard CXX (_cpp_std) ---
+  "iostream": "_cpp_std",
+  "string": "_cpp_std",
+  "vector": "_cpp_std",
+  "map": "_cpp_std",
+  "unordered_map": "_cpp_std",
+  "set": "_cpp_std",
+  "unordered_set": "_cpp_std",
+  "memory": "_cpp_std",
+  "algorithm": "_cpp_std",
+  "thread": "_cpp_std",
+  "mutex": "_cpp_std",
+  "chrono": "_cpp_std",
+  "functional": "_cpp_std",
+  "fstream": "_cpp_std",
+  "sstream": "_cpp_std",
+  "stdexcept": "_cpp_std",
 
-  "boost/asio.hpp": "boost_asio",
-  "boost/filesystem.hpp": "boost_filesystem",
-  "boost/uuid/uuid.hpp": "boost_uuid",
-  "boost/program_options.hpp": "boost_program_options",
-  "boost/thread.hpp": "boost_thread",
-  "boost/regex.hpp": "boost_regex",
-  "boost/chrono.hpp": "boost_chrono",
-  "boost/date_time.hpp": "boost_date_time",
-  "boost/serialization.hpp": "boost_serialization",
-  "boost/system/error_code.hpp": "boost_system",
-  "boost/test/unit_test.hpp": "boost_test",
-  "boost/algorithm/string.hpp": "boost_algorithm",
-  "boost/iostreams.hpp": "boost_iostreams",
-  "boost/graph/graphviz.hpp": "boost_graph"
+
+// --- SFML (_sfml) ---
+  "SFML/Graphics.hpp": "_sfml",
+  "SFML/Audio.hpp": "_sfml",
+  "SFML/Window.hpp": "_sfml",
+  "SFML/System.hpp": "_sfml",
+  "SFML/Network.hpp": "_sfml",
+  "SFML/OpenGL.hpp": "_sfml",
+  "SFML/Main.hpp": "_sfml",
+
+
+// --- SDL (_sdl2) ---
+  "SDL.h": "_sdl2",
+  "SDL_image.h": "_sdl2",
+  "SDL_mixer.h": "_sdl2",
+  "SDL_ttf.h": "_sdl2",
+  "SDL_net.h": "_sdl2",
+  "SDL_opengl.h": "_sdl2",
+
+
+// --- Boost (_boost) ---
+  "boost/asio.hpp": "_boost",
+  "boost/filesystem.hpp": "_boost",
+  "boost/uuid/uuid.hpp": "_boost",
+  "boost/program_options.hpp": "_boost",
+  "boost/thread.hpp": "_boost",
+  "boost/regex.hpp": "_boost",
+  "boost/chrono.hpp": "_boost",
+  "boost/date_time.hpp": "_boost",
+  "boost/serialization.hpp": "_boost",
+  "boost/system/error_code.hpp": "_boost",
+  "boost/test/unit_test.hpp": "_boost",
+  "boost/algorithm/string.hpp": "_boost",
+  "boost/iostreams.hpp": "_boost",
+  "boost/graph/graphviz.hpp": "_boost",
+
+
+  // --- fmt ---
+  "fmt/core.h": "_fmt",
+  "fmt/format.h": "_fmt",
+
+  // --- nlohmann/json ---
+  "nlohmann/json.hpp": "_nlohmann",
+
+  // --- yaml-cpp ---
+  "yaml-cpp/yaml.h": "_yaml",
+
+  // --- cereal ---
+  "cereal/archives/json.hpp": "_cereal",
+  "cereal/types/vector.hpp": "_cereal",
+
+  // --- Dear ImGui ---
+  "imgui.h": "_imgui",
+  "imgui_internal.h": "_imgui",
+
+  // --- Qt ---
+  "QApplication": "_qt",
+  "QWidget": "_qt",
+  "QString": "_qt",
+  "QPushButton": "_qt",
+
+  // --- OpenGL / GLFW / GLEW ---
+  "GL/glew.h": "_opengl",
+  "GLFW/glfw3.h": "_opengl",
+
+  // --- libcurl ---
+  "curl/curl.h": "_curl",
+
+  // --- libzip ---
+  "zip.h": "_zip",
+
+  // --- libarchive ---
+  "archive.h": "_archive",
+  "archive_entry.h": "_archive",
+
+  // --- Eigen ---
+  "Eigen/Dense": "_eigen",
+  "Eigen/Core": "_eigen",
+
+  // --- OpenCV ---
+  "opencv2/opencv.hpp": "_opencv",
+  "opencv2/core.hpp": "_opencv",
+  "opencv2/imgcodecs.hpp": "_opencv",
+
+
+// --- Raylib ---
+  "raylib.h": "_raylib",
+  "raymath.h": "_raylib",
+  "rlgl.h": "_raylib",
+  "rcamera.h": "_raylib",
+  "rgestures.h": "_raylib",
+  "rmodels.h": "_raylib",
+  "rshapes.h": "_raylib",
+  "rtext.h": "_raylib",
+  "rtextures.h": "_raylib"
+
 }
