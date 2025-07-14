@@ -7,15 +7,17 @@ project(defin LANGUAGES C CXX)
 include(GNUInstallDirs)
 
 add_executable(${PROJECT_NAME} 
-	main.cpp 
-	curate_missing.cpp 
-	fetch_dbmap.cpp 
-	fetch_pm.cpp 
-	fetch_headers.cpp 
-	json_parser_engine.cpp 
-	resolver.cpp
-	auto_install.cpp
+	src/main.cpp 
+	src/curate_missing.cpp 
+	src/fetch_dbmap.cpp 
+	src/fetch_pm.cpp 
+	src/fetch_headers.cpp 
+	src/json_parser_engine.cpp 
+	src/resolver.cpp
+	src/auto_install.cpp
 	)
+
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/headers)
 
 target_link_directories(${PROJECT_NAME} PRIVATE tiny-process-library/build)
 
