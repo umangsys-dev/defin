@@ -66,18 +66,19 @@ sudo cmake --install build
 
 ---
 
-### 📁 Project Requirements
+### ⚠️ Make Sure
 
 The given directory should contain C++ source code:
 - Any combination of `.cpp`, `.hpp`, `.c`, or `.h` files
 - No need for a compiled binary
 
-depin directly parses your source code to extract `#include` directives.
-
----
-
-### ⚠️ Notes
+(depin directly parses your source code to extract `#include` directives.)
 
 - Use `sudo` since actual package installation requires root
 - Supported package managers: `apt`, `pacman`, and `dnf`
-- Future versions may include `--help`, auto-confirm options, and more flags
+
+---
+
+### 🧩 Want to contribute header mappings?
+
+- Check out [json-db/Contributing.md](./json-db/Contributing.md).
