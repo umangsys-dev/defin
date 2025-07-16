@@ -35,6 +35,11 @@ int main(int argc, char**argv){
 	if(static_cast<std::string>(argv[1]) == "fix"){
 
 		headers_list = find_headers(static_cast<std::string>(argv[2]));
+
+		if(headers_list.size() == 0){
+			std::cout << "No listed c++ packages implemented." << std::endl;
+			return 0;
+		}
 		
 		llibs_list = resolve_llibs(llib_map, headers_list);
 	
@@ -42,12 +47,12 @@ int main(int argc, char**argv){
 
 		missing_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_missing);
 
-		if(missing_list.size() !> 0){
+		if(missing_list.size() == 0){
 			std::cout << "No packages to fix." << std::endl;
 			return 0;
 		}
 
-		installation = install(m_OR_p_list, pm_map, pm_here);
+		installation = install(present_list, pm_map, pm_here);
 
 	}
 
@@ -59,6 +64,11 @@ int main(int argc, char**argv){
 		if(static_cast<std::string>(argv[2]) == flag_missing || static_cast<std::string>(argv[2]) == flag_present){
 
 			headers_list = find_headers(static_cast<std::string>(argv[3]));
+
+			if(headers_list.size() == 0){
+				std::cout << "No listed c++ packages implemented." << std::endl;
+				return 0;
+			}
    
 			llibs_list = resolve_llibs(llib_map, headers_list);
 	
@@ -68,12 +78,12 @@ int main(int argc, char**argv){
 
 				missing_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_missing);
 
-				if(missing_list.size() !> 0){
-					std::cout << "Required packages are already present." << std::endl;
+				if(missing_list.size() == 0){
+					std::cout << "No missing packages." << std::endl;
 					return 0;
 				}else{
 					std::cout << "Following packages missing:" << std::endl;
-					for(auto& m : missing_list) std::cout << setw(15) << "" << m << std::endl;
+					for(auto& m : missing_list) std::cout << std::setw(15) << "" << m << std::endl;
 				}
 			}
 
@@ -81,13 +91,13 @@ int main(int argc, char**argv){
 
 				present_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_present);
 
-				if(present_list.size() !> 0){
-					std::cout << "Required packages are missing." << std::endl;
-					std::cout << "Use \"sudo defin fix dir/\" to resolve missing packages." std::endl;
+				if(present_list.size() == 0){
+					std::cout << "No packages present, meaning required packages are missing." << std::endl;
+					std::cout << "Use \"sudo defin fix dir/\" to resolve missing packages." << std::endl;
 					return 0;
 				}else{
-					std::cout << "Following packages found:" std::endl;
-					for(auto& m : present_list) std::cout << setw(15) << "" << m << std::endl;
+					std::cout << "Following packages found:" << std::endl;
+					for(auto& m : present_list) std::cout << std::setw(25) << "" << m << std::endl;
 				}
 			}
 		}

@@ -14,11 +14,11 @@ std::vector<std::string> install(std::vector<std::string> missing_list, std::uno
 
 	std::cout << "fetching the following packages: " << std::endl;
 
-	for(auto& m : missing_list) std::cout << std::setw(5) << m << std::endl;
+	for(auto& m : missing_list) std::cout << std::setw(6) << m << std::endl;
 
-	std::cout << "----------------------" << std::endl;
+	std::cout << "---------------------------------" << std::endl;
 
-	std::cout << "Total installs : " << missing_list.size() << std::endl;
+	std::cout << "Total to be installed : " << missing_list.size() << std::endl;
 
 	for(auto& lib : missing_list){
 

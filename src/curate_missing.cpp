@@ -34,12 +34,10 @@ std::vector<std::string> get_missing_OR_present(std::vector<std::string> detecte
 		else present_list.push_back(pkg);
 	}
 
-	std::vector<std::string> temp;
-
 	if(flag == "-p"){
 
 		std::sort(present_list.begin(), present_list.end());
-		temp = std::unique(present_list.begin(), present_list.end());
+		auto temp = std::unique(present_list.begin(), present_list.end());
 		present_list.erase(temp, present_list.end());
 
 		return present_list;
@@ -49,7 +47,7 @@ std::vector<std::string> get_missing_OR_present(std::vector<std::string> detecte
 	if(flag == "-m"){
 
 		std::sort(missing_list.begin(), missing_list.end());
-		temp = std::unique(missing_list.begin(), missing_list.end());
+		auto temp = std::unique(missing_list.begin(), missing_list.end());
 		missing_list.erase(temp, missing_list.end());
 
 		return missing_list;
