@@ -34,18 +34,24 @@ std::vector<std::string> get_missing_OR_present(std::vector<std::string> detecte
 		else present_list.push_back(pkg);
 	}
 
+	std::vector<std::string> temp;
+
 	if(flag == "-p"){
 
-		std::cout << "packages found:" << std::endl;
-		for(auto& m : present_list) std::cout << std::setw(15) << "" << m << std::endl;
+		std::sort(present_list.begin(), present_list.end());
+		temp = std::unique(present_list.begin(), present_list.end());
+		present_list.erase(temp, present_list.end());
+
 		return present_list;
 	}
 
 
 	if(flag == "-m"){
 
-		std::cout << "missing packages:" << std::endl;
-		for(auto& m : missing_list) std::cout << std::setw(15) << "" << m << std::endl;
+		std::sort(missing_list.begin(), missing_list.end());
+		temp = std::unique(missing_list.begin(), missing_list.end());
+		missing_list.erase(temp, missing_list.end());
+
 		return missing_list;
 	}
 }

@@ -25,7 +25,9 @@ int main(int argc, char**argv){
 
 	std::vector<std::string> pkgs_list;
 
-	std::vector<std::string> m_OR_p_list;
+	std::vector<std::string> missing_list;
+
+	std::vector<std::string> present_list;
 
 	std::vector<std::string> installation;
 
@@ -38,7 +40,12 @@ int main(int argc, char**argv){
 	
 		pkgs_list = resolve_pkg_per_pm(llibs_list, pm_here);
 
-		m_OR_p_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_missing);
+		missing_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_missing);
+
+		if(missing_list.size() !> 0){
+			std::cout << "No packages to fix." << std::endl;
+			return 0;
+		}
 
 		installation = install(m_OR_p_list, pm_map, pm_here);
 
@@ -46,6 +53,8 @@ int main(int argc, char**argv){
 
 
 	if(static_cast<std::string>(argv[1]) == "enlist"){
+
+		std::string given_flag = static_cast<std::string>(argv[2]);
 
 		if(static_cast<std::string>(argv[2]) == flag_missing || static_cast<std::string>(argv[2]) == flag_present){
 
@@ -55,7 +64,32 @@ int main(int argc, char**argv){
 	
 			pkgs_list = resolve_pkg_per_pm(llibs_list, pm_here);
 
-			m_OR_p_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, argv[2]);
+			if(given_flag == flag_missing){
+
+				missing_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_missing);
+
+				if(missing_list.size() !> 0){
+					std::cout << "Required packages are already present." << std::endl;
+					return 0;
+				}else{
+					std::cout << "Following packages missing:" << std::endl;
+					for(auto& m : missing_list) std::cout << setw(15) << "" << m << std::endl;
+				}
+			}
+
+			else{
+
+				present_list = get_missing_OR_present(pkgs_list, pm_map, pm_here, flag_present);
+
+				if(present_list.size() !> 0){
+					std::cout << "Required packages are missing." << std::endl;
+					std::cout << "Use \"sudo defin fix dir/\" to resolve missing packages." std::endl;
+					return 0;
+				}else{
+					std::cout << "Following packages found:" std::endl;
+					for(auto& m : present_list) std::cout << setw(15) << "" << m << std::endl;
+				}
+			}
 		}
 
 		else std::cerr << "Error: expected flags '-m' or '-p' after \"enlist\"" << "\n";
