@@ -17,7 +17,7 @@ add_executable(${PROJECT_NAME}
 	src/auto_install.cpp
 	)
 
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/headers)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/headers  PRIVATE ${CMAKE_SOURCE_DIR})
 
 target_link_directories(${PROJECT_NAME} PRIVATE tiny-process-library/build)
 
@@ -31,5 +31,3 @@ install(TARGETS ${PROJECT_NAME}
 install(FILES json-db/header-llib.json json-db/llib-pkg_apt.json json-db/llib-pkg_pacman.json json-db/llib-pkg_dnf.json json-db/pm-cmd.json
 	DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}
 )
-
-5YLd6Y/\~1o@
