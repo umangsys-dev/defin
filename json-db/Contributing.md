@@ -6,7 +6,7 @@ These files power the detection and installation logic by mapping headers, libra
 
 ---
 
-## 📦 JSON Files
+## JSON Files
 
 | File                         | Description |
 |-----------------------------|-------------|
@@ -18,7 +18,7 @@ These files power the detection and installation logic by mapping headers, libra
 
 ---
 
-## 🧑‍🤝‍🧑 Contribution Guidelines
+## Contribution Guidelines
 
 We welcome contributions to any of these files!
 
@@ -26,7 +26,7 @@ Steps to contribute new header-to-library mappings for **`defin`** are as follow
 
 ---
 
-## ✅ Step 1: Add Headers to `header-llibs.json`
+## Step 1: Add Headers to `header-llibs.json`
 
 Map one or more headers to a logical group name:
 
@@ -38,7 +38,7 @@ Map one or more headers to a logical group name:
 }
 ```
 
-✅ Follow:
+Follow:
 - Use double quotes
 - No trailing commas
 - Group similar headers under the same logical key (e.g. all `boost/...` → `_boost`)
@@ -46,7 +46,7 @@ Map one or more headers to a logical group name:
 
 ---
 
-## ✅ Step 2: Add Package Mapping to All Distros
+## Step 2: Add Package Mapping to All Distros
 
 Each group in `header-llibs.json` must also be added to:
 
@@ -85,7 +85,7 @@ Each group in `header-llibs.json` must also be added to:
 
 ---
 
-## 🔤 Naming Conventions
+## Naming Conventions
 
 | Header Family        | Logical Group |
 |----------------------|----------------|
@@ -113,7 +113,7 @@ Each group in `header-llibs.json` must also be added to:
 
 ---
 
-## 🧪 Optional: Test Your Mappings
+## Test Your Mappings
 
 To test your changes locally:
 
@@ -125,7 +125,7 @@ Ensure the headers you added now resolve to the correct installable packages.
 
 ---
 
-## 🧠 Keep in mind
+## Distro package query
 
 - If you're unsure which package provides a header:
   - On Debian/Ubuntu: `dpkg -S <header>`
@@ -136,7 +136,7 @@ Ensure the headers you added now resolve to the correct installable packages.
 ---
 
 
-## 📄 License
+## License
 
 These mapping files are licensed under the MIT License.  
 See [LICENSE-json.txt](./LICENSE-json.txt).

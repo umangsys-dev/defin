@@ -3,7 +3,7 @@
 **defin** is a system tool that detects and installs missing dependencies for C++ projects by analyzing `#include` directives.
 
 
-## 📄 License
+## License
 
 - **Core code** is under a custom non-redistributable license. See [LICENSE.txt](./LICENSE.txt)
 - **JSON database** (`json-db/`) is licensed under the MIT License. See [json-db/LICENSE-json.txt](./json-db/LICENSE-json.txt)
@@ -18,7 +18,7 @@
 - CLI-first, scriptable
 
 
-## 🐧 Compatibility
+## Compatibility
 
 - Supported OS: **Linux** only  
 - Tested on: Arch, Debian, Fedora (others may work)
@@ -36,11 +36,11 @@ cmake --build build
 sudo cmake --install build
 ```
 
-## 🚀 Usage
+## Usage
 
-### ⚙️ Commands
+### Commands
 
-#### 🔧 `sudo defin fix /path/to/project/`
+#### `sudo defin fix /path/to/project/`
 
 - Recursively scans all `.cpp`, `.hpp`, `.c`, and `.h` files in the given directory
 - Detects used `#include` headers
@@ -51,7 +51,7 @@ sudo cmake --install build
 
 ---
 
-#### 📋 `sudo defin enlist -m /path/to/project/`
+#### `sudo defin enlist -m /path/to/project/`
 
 - Lists **missing** packages (headers used in the source but packages not installed)
 - Does not perform any installation
@@ -59,26 +59,26 @@ sudo cmake --install build
 
 ---
 
-#### 📋 `sudo defin enlist -p /path/to/project/`
+### `sudo defin enlist -p /path/to/project/`
 
 - Lists **present** packages (headers used and already available on your system)
 - Useful for auditing project dependencies
 
 ---
 
-### ⚠️ Make Sure
+### Make Sure
 
-The given directory should contain C++ source code:
+The directory you pass contains C++ source code:
 - Any combination of `.cpp`, `.hpp`, `.c`, or `.h` files
 - No need for a compiled binary
 
-(depin directly parses your source code to extract `#include` directives.)
+  (depin directly parses your source code to extract `#include` directives.)
 
 - Use `sudo` since actual package installation requires root
 - Supported package managers: `apt`, `pacman`, and `dnf`
 
 ---
 
-### 🧩 Want to contribute header mappings?
+### Want to contribute header mappings?
 
 - Check out [json-db/Contributing.md](./json-db/Contributing.md).
