@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_CXX_STANDARD 20)
 
+set(${CMAKE_INSTALL_PREFIX} /usr/local/)
+
 project(defin LANGUAGES C CXX)
 
 include(GNUInstallDirs)

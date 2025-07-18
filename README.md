@@ -1,4 +1,4 @@
-# defin
+# About
 
 **defin** is a system tool that detects and installs missing dependencies for C++ projects by analyzing `#include` directives.
 
@@ -31,7 +31,7 @@
 git clone https://github.com/umangsys-dev/defin
 cd defin
 mkdir build
-cmake -S . -B build/ -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local/
+cmake -S . -B build/
 cmake --build build
 sudo cmake --install build
 ```
@@ -59,7 +59,7 @@ sudo cmake --install build
 
 ---
 
-### `sudo defin enlist -p /path/to/project/`
+#### `sudo defin enlist -p /path/to/project/`
 
 - Lists **present** packages (headers used and already available on your system)
 - Useful for auditing project dependencies
