@@ -1,4 +1,4 @@
-# About
+# defin
 
 **defin** is a system tool that detects and installs missing dependencies for C++ projects by analyzing `#include` directives.
 
